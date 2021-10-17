@@ -1,0 +1,29 @@
+package zadanie1;
+
+
+public class JavaApplication2 {
+
+    
+    public static void main(String[] args) {
+        //z4
+        Trojkat t1 = new Trojkat(4,7);
+        Prostokat p1 = new Prostokat(4,8);
+        Punkt pkt1 = new Punkt(0,9);
+        //z11
+        Kwadrat kw1 = new Kwadrat(2,2);
+        
+        System.out.println("Trojkat o podstawie a= "+t1.podst+" i wysokosci h= "+t1.wys);
+        System.out.println("Prostokat o boku a= "+p1.szer+" i boku b= "+p1.wys);
+        System.out.println("Punkt o wspolrzednych x= "+pkt1.x+" i  y= "+pkt1.y);
+    //z9
+    p1.przesun(3,5);
+   System.out.println("Współrzędne po przesunięciu"); 
+   System.out.println(p1.punkt.x+","+p1.punkt.y);
+    
+    
+    //z13
+    System.out.println(t1.toString());
+    System.out.println(p1.toString());
+    System.out.println(pkt1.toString());
+  }  
+}
